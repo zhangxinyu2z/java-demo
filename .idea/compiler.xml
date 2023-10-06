@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-basesyntax" />
+        <module name="demo-optional" />
+        <module name="demo-enum" />
+        <module name="demo-innerclass" />
+        <module name="demo-jdbc" />
+        <module name="demo-net" />
+        <module name="collection-basic" />
+        <module name="demo-xml" />
+        <module name="demo-annotation" />
+        <module name="demo-lambda" />
+        <module name="demo-features" />
+        <module name="demo-callbackfunction" />
+        <module name="demo-string" />
+        <module name="demo-oop" />
+        <module name="collection-api" />
+        <module name="demo-reflection" />
+        <module name="multithread-basic" />
+        <module name="demo-keyword" />
+        <module name="demo-io" />
+        <module name="demo-introspector" />
+        <module name="demo-date" />
+        <module name="demo-guava" />
+        <module name="dmeo-keyword" />
+        <module name="demo-json" />
+        <module name="demo-recursion" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="collection-api" target="1.8" />
+      <module name="collection-basic" target="1.8" />
+      <module name="demo-annotation" target="1.8" />
+      <module name="demo-basesyntax" target="1.8" />
+      <module name="demo-callbackfunction" target="1.8" />
+      <module name="demo-collection" target="1.8" />
+      <module name="demo-date" target="1.8" />
+      <module name="demo-enum" target="1.8" />
+      <module name="demo-features" target="1.8" />
+      <module name="demo-guava" target="1.8" />
+      <module name="demo-innerclass" target="1.8" />
+      <module name="demo-introspector" target="1.8" />
+      <module name="demo-io" target="1.8" />
+      <module name="demo-jdbc" target="1.8" />
+      <module name="demo-json" target="1.8" />
+      <module name="demo-keyword" target="1.8" />
+      <module name="demo-lambda" target="1.8" />
+      <module name="demo-mockioc" target="1.8" />
+      <module name="demo-multithread" target="1.8" />
+      <module name="demo-net" target="1.8" />
+      <module name="demo-oop" target="1.8" />
+      <module name="demo-optional" target="1.8" />
+      <module name="demo-recursion" target="1.8" />
+      <module name="demo-reflection" target="1.8" />
+      <module name="demo-string" target="1.8" />
+      <module name="demo-xml" target="1.8" />
+      <module name="dmeo-keyword" target="1.8" />
+      <module name="java-demo" target="1.8" />
+      <module name="multithread-basic" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

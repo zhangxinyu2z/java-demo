@@ -1,0 +1,12 @@
+rime
+
+
+在包下编译：
+javac -encoding utf8 （遇到编码的不可映射字符） src目录下 包名/类名.java
+java src目录下 包名.类名
+
+
+dos 下  查看和设置classpath的命令
+查看：echo %classpath%
+设置：set classpath=%classpath%path   其中%classpath%代表以前的值，path代表新值
+98的dos下中文的输入：输入pdos95即可。

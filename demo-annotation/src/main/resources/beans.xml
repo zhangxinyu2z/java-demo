@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+    <bean id="stu1" className="com.xinyu.annotation.iocimpl.domain.Student">
+        <property name="number" value="0x0cd0a01"/>
+        <property name="name" value="刘亦菲"/>
+        <property name="age" value="24"/>
+        <property name="sex" value="女"/>
+        <property name="teacher" ref="t1"/><!-- ref的值必须是另一个been的id -->
+    </bean>
+
+    <bean id="t1" className="com.xinyu.annotation.iocimpl.domain.Teacher">
+        <property name="tid" value="0x0cd0a01"/>
+        <property name="name" value="王祖贤"/>
+    </bean>
+
+    <bean id="studentDaoImpl" className="com.xinyu.annotation.iocimpl.dao.StudentDaoImpl1">
+    </bean>
+
+    <bean id="stuservice" className="com.xinyu.annotation.iocimpl.service.StudentServiceImpl">
+        <property name="studentDao" ref="studentDaoImpl"/>
+    </bean>
+</beans>

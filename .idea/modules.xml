@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-collection/collection-api/collection-api.iml" filepath="$PROJECT_DIR$/demo-collection/collection-api/collection-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-collection/collection-basic/collection-basic.iml" filepath="$PROJECT_DIR$/demo-collection/collection-basic/collection-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-annotation/demo-annotation.iml" filepath="$PROJECT_DIR$/demo-annotation/demo-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-basesyntax/demo-basesyntax.iml" filepath="$PROJECT_DIR$/demo-basesyntax/demo-basesyntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-callbackfunction/demo-callbackfunction.iml" filepath="$PROJECT_DIR$/demo-callbackfunction/demo-callbackfunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-collection/demo-collection.iml" filepath="$PROJECT_DIR$/demo-collection/demo-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-date/demo-date.iml" filepath="$PROJECT_DIR$/demo-date/demo-date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-enum/demo-enum.iml" filepath="$PROJECT_DIR$/demo-enum/demo-enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-features/demo-features.iml" filepath="$PROJECT_DIR$/demo-features/demo-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-guava/demo-guava.iml" filepath="$PROJECT_DIR$/demo-guava/demo-guava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-innerclass/demo-innerclass.iml" filepath="$PROJECT_DIR$/demo-innerclass/demo-innerclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-introspector/demo-introspector.iml" filepath="$PROJECT_DIR$/demo-introspector/demo-introspector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-io/demo-io.iml" filepath="$PROJECT_DIR$/demo-io/demo-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jdbc/demo-jdbc.iml" filepath="$PROJECT_DIR$/demo-jdbc/demo-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-json/demo-json.iml" filepath="$PROJECT_DIR$/demo-json/demo-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-keyword/demo-keyword.iml" filepath="$PROJECT_DIR$/demo-keyword/demo-keyword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-lambda/demo-lambda.iml" filepath="$PROJECT_DIR$/demo-lambda/demo-lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-mockioc/demo-mockioc.iml" filepath="$PROJECT_DIR$/demo-mockioc/demo-mockioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-multithread/demo-multithread.iml" filepath="$PROJECT_DIR$/demo-multithread/demo-multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-net/demo-net.iml" filepath="$PROJECT_DIR$/demo-net/demo-net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-oop/demo-oop.iml" filepath="$PROJECT_DIR$/demo-oop/demo-oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-optional/demo-optional.iml" filepath="$PROJECT_DIR$/demo-optional/demo-optional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-recursion/demo-recursion.iml" filepath="$PROJECT_DIR$/demo-recursion/demo-recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-reflection/demo-reflection.iml" filepath="$PROJECT_DIR$/demo-reflection/demo-reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-string/demo-string.iml" filepath="$PROJECT_DIR$/demo-string/demo-string.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-xml/demo-xml.iml" filepath="$PROJECT_DIR$/demo-xml/demo-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dmeo-keyword/dmeo-keyword.iml" filepath="$PROJECT_DIR$/dmeo-keyword/dmeo-keyword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-demo.iml" filepath="$PROJECT_DIR$/.idea/java-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-multithread/multithread-basic/multithread-basic.iml" filepath="$PROJECT_DIR$/demo-multithread/multithread-basic/multithread-basic.iml" />
+    </modules>
+  </component>
+</project>
