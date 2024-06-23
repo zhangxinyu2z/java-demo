@@ -34,6 +34,7 @@
         <module>demo-oop</module>
         <module>demo-annotation</module>
         <module>demo-jdbc</module>
+        <module>commons-util</module>
     </modules>
 
     <properties>

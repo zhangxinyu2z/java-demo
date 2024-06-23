@@ -1,19 +1,26 @@
 import com.google.gson.Gson;
-import com.sun.deploy.net.HttpResponse;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.*;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author zhangxinyu
@@ -25,7 +32,10 @@ public class SimpleDemoTest {
     public void aSimpleExample() throws IOException {
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("time", "1663741083314"));
-        formparams.add(new BasicNameValuePair("token", "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwc3NfaWQiOiJQUzAwMDAwMDAwMDAwMDAxNDY5NCIsInVzZXJfbmFtZSI6Iis4Ni0xNTIzNzM4NjI3MSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2NjM4Mjc0ODMsImxvZ2luIjoiU0MxNTAwODY0MiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJkM2IzN2UyOS1kMDRjLTQxNDctODdiZS1jYzY4MzExZDZlYzkiLCJjbGllbnRfaWQiOiJzc28ifQ.Ah0xLWkINWyWHSD3BO6zOA6hZ6sm8D_sbSUW2CG4eE2VlC-E9ZuswIHuSsHwTrUBJUWfyB1pz0wvh2nuoUy4ytMN3pge4gF-5yLUXHKyA_Bsfhk4Uak8c5cmD0vounkVgUCn1FrdowP891V7a6ZkVZ-NRAMmEQpVh9ovXkYec-E"));
+        formparams.add(new BasicNameValuePair("token",
+            "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9"
+                +
+                ".eyJwc3NfaWQiOiJQUzAwMDAwMDAwMDAwMDAxNDY5NCIsInVzZXJfbmFtZSI6Iis4Ni0xNTIzNzM4NjI3MSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2NjM4Mjc0ODMsImxvZ2luIjoiU0MxNTAwODY0MiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJkM2IzN2UyOS1kMDRjLTQxNDctODdiZS1jYzY4MzExZDZlYzkiLCJjbGllbnRfaWQiOiJzc28ifQ.Ah0xLWkINWyWHSD3BO6zOA6hZ6sm8D_sbSUW2CG4eE2VlC-E9ZuswIHuSsHwTrUBJUWfyB1pz0wvh2nuoUy4ytMN3pge4gF-5yLUXHKyA_Bsfhk4Uak8c5cmD0vounkVgUCn1FrdowP891V7a6ZkVZ-NRAMmEQpVh9ovXkYec-E"));
         HttpEntity reqEntity = new UrlEncodedFormEntity(formparams, "utf-8");
 
         RequestConfig requestConfig = RequestConfig.custom()
@@ -57,12 +67,13 @@ public class SimpleDemoTest {
         ResponseHandler<String> responseHandler = new BasicResponseHandler();
         Map<Object, Object> baseRequest = new HashMap<>();
 
-        baseRequest.put("time",System.currentTimeMillis());
+        baseRequest.put("time", System.currentTimeMillis());
         baseRequest.put("token", "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9"
-            + ".eyJwc3NfaWQiOiJQUzAwMDAwMDAwMDAwMDAxNDY5NCIsInVzZXJfbmFtZSI6Iis4Ni0xNTIzNzM4NjI3MSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2NjM4Mjc0ODMsImxvZ2luIjoiU0MxNTAwODY0MiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJkM2IzN2UyOS1kMDRjLTQxNDctODdiZS1jYzY4MzExZDZlYzkiLCJjbGllbnRfaWQiOiJzc28ifQ.Ah0xLWkINWyWHSD3BO6zOA6hZ6sm8D_sbSUW2CG4eE2VlC-E9ZuswIHuSsHwTrUBJUWfyB1pz0wvh2nuoUy4ytMN3pge4gF-5yLUXHKyA_Bsfhk4Uak8c5cmD0vounkVgUCn1FrdowP891V7a6ZkVZ-NRAMmEQpVh9ovXkYec-E");
+            +
+            ".eyJwc3NfaWQiOiJQUzAwMDAwMDAwMDAwMDAxNDY5NCIsInVzZXJfbmFtZSI6Iis4Ni0xNTIzNzM4NjI3MSIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE2NjM4Mjc0ODMsImxvZ2luIjoiU0MxNTAwODY0MiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJkM2IzN2UyOS1kMDRjLTQxNDctODdiZS1jYzY4MzExZDZlYzkiLCJjbGllbnRfaWQiOiJzc28ifQ.Ah0xLWkINWyWHSD3BO6zOA6hZ6sm8D_sbSUW2CG4eE2VlC-E9ZuswIHuSsHwTrUBJUWfyB1pz0wvh2nuoUy4ytMN3pge4gF-5yLUXHKyA_Bsfhk4Uak8c5cmD0vounkVgUCn1FrdowP891V7a6ZkVZ-NRAMmEQpVh9ovXkYec-E");
 
-//        baseRequest.setAppVersion(appBehaviorRequest.getAppVersion());
-//        baseRequest.setDevice(appBehaviorRequest.getDevice());
+        //        baseRequest.setAppVersion(appBehaviorRequest.getAppVersion());
+        //        baseRequest.setDevice(appBehaviorRequest.getDevice());
         //第一步：创建HttpClient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //第二步：创建httpPost对象
@@ -76,12 +87,12 @@ public class SimpleDemoTest {
             httpPost.setEntity(requestEntity);
             //第四步：发送HttpPost请求，获取返回值
             String jsonStr = httpClient.execute(httpPost, responseHandler);
-            System.out.println(String.format("获取用户信息，请求接口【%s】,"
-                + "参数【%s】，返回结果：%s", url, gson.toJson(baseRequest), jsonStr));
+            System.out.println(
+                String.format("获取用户信息，请求接口【%s】," + "参数【%s】，返回结果：%s", url, gson.toJson(baseRequest), jsonStr));
             Map map = gson.fromJson(jsonStr, Map.class);
         } catch (Exception e) {
-//            LOGGER.error(String.format("获取用户信息，请求接口【%s】,参数【%s】", url, gson.toJson(baseRequest)));
-//            LOGGER.error(e.getMessage(), e);
+            //            LOGGER.error(String.format("获取用户信息，请求接口【%s】,参数【%s】", url, gson.toJson(baseRequest)));
+            //            LOGGER.error(e.getMessage(), e);
 
         }
     }

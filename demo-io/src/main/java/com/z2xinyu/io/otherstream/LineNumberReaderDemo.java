@@ -1,6 +1,5 @@
 package com.z2xinyu.io.otherstream;
 
-import homework.SimulateBufferReader;
 
 import java.io.FileReader;
 import java.io.IOException;

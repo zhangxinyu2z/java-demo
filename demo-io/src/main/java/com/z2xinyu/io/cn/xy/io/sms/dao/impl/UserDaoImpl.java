@@ -1,7 +1,7 @@
 package com.z2xinyu.io.cn.xy.io.sms.dao.impl;
 
-import cn.xy.io.sms.dao.UserDao;
-import cn.xy.io.sms.pojo.User;
+import com.z2xinyu.io.cn.xy.io.sms.dao.UserDao;
+import com.z2xinyu.io.cn.xy.io.sms.pojo.User;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

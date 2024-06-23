@@ -11,6 +11,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/collection-utils/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mockioc/pom.xml" />
       </set>
     </option>

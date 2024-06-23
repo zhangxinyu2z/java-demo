@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo-collection/collection-api/collection-api.iml" filepath="$PROJECT_DIR$/demo-collection/collection-api/collection-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-collection/collection-basic/collection-basic.iml" filepath="$PROJECT_DIR$/demo-collection/collection-basic/collection-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-collection/collection-utils/collection-utils.iml" filepath="$PROJECT_DIR$/demo-collection/collection-utils/collection-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-util/commons-util.iml" filepath="$PROJECT_DIR$/commons-util/commons-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-annotation/demo-annotation.iml" filepath="$PROJECT_DIR$/demo-annotation/demo-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-basesyntax/demo-basesyntax.iml" filepath="$PROJECT_DIR$/demo-basesyntax/demo-basesyntax.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-callbackfunction/demo-callbackfunction.iml" filepath="$PROJECT_DIR$/demo-callbackfunction/demo-callbackfunction.iml" />
@@ -29,7 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-string/demo-string.iml" filepath="$PROJECT_DIR$/demo-string/demo-string.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-xml/demo-xml.iml" filepath="$PROJECT_DIR$/demo-xml/demo-xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/dmeo-keyword/dmeo-keyword.iml" filepath="$PROJECT_DIR$/dmeo-keyword/dmeo-keyword.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/java-demo.iml" filepath="$PROJECT_DIR$/.idea/java-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-demo.iml" filepath="$PROJECT_DIR$/java-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-multithread/multithread-basic/multithread-basic.iml" filepath="$PROJECT_DIR$/demo-multithread/multithread-basic/multithread-basic.iml" />
     </modules>
   </component>

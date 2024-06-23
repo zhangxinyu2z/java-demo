@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-basesyntax" />
         <module name="demo-optional" />
+        <module name="commons-util" />
+        <module name="collection-utils" />
         <module name="demo-enum" />
         <module name="demo-innerclass" />
         <module name="demo-jdbc" />
@@ -35,35 +37,37 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="collection-api" target="1.8" />
-      <module name="collection-basic" target="1.8" />
-      <module name="demo-annotation" target="1.8" />
-      <module name="demo-basesyntax" target="1.8" />
-      <module name="demo-callbackfunction" target="1.8" />
-      <module name="demo-collection" target="1.8" />
-      <module name="demo-date" target="1.8" />
-      <module name="demo-enum" target="1.8" />
-      <module name="demo-features" target="1.8" />
-      <module name="demo-guava" target="1.8" />
-      <module name="demo-innerclass" target="1.8" />
-      <module name="demo-introspector" target="1.8" />
-      <module name="demo-io" target="1.8" />
-      <module name="demo-jdbc" target="1.8" />
-      <module name="demo-json" target="1.8" />
-      <module name="demo-keyword" target="1.8" />
-      <module name="demo-lambda" target="1.8" />
+      <module name="collection-api" target="8" />
+      <module name="collection-basic" target="8" />
+      <module name="collection-utils" target="8" />
+      <module name="commons-util" target="8" />
+      <module name="demo-annotation" target="8" />
+      <module name="demo-basesyntax" target="8" />
+      <module name="demo-callbackfunction" target="8" />
+      <module name="demo-collection" target="8" />
+      <module name="demo-date" target="8" />
+      <module name="demo-enum" target="8" />
+      <module name="demo-features" target="8" />
+      <module name="demo-guava" target="8" />
+      <module name="demo-innerclass" target="8" />
+      <module name="demo-introspector" target="8" />
+      <module name="demo-io" target="8" />
+      <module name="demo-jdbc" target="8" />
+      <module name="demo-json" target="8" />
+      <module name="demo-keyword" target="8" />
+      <module name="demo-lambda" target="8" />
       <module name="demo-mockioc" target="1.8" />
-      <module name="demo-multithread" target="1.8" />
-      <module name="demo-net" target="1.8" />
-      <module name="demo-oop" target="1.8" />
-      <module name="demo-optional" target="1.8" />
-      <module name="demo-recursion" target="1.8" />
-      <module name="demo-reflection" target="1.8" />
-      <module name="demo-string" target="1.8" />
-      <module name="demo-xml" target="1.8" />
-      <module name="dmeo-keyword" target="1.8" />
-      <module name="java-demo" target="1.8" />
-      <module name="multithread-basic" target="1.8" />
+      <module name="demo-multithread" target="8" />
+      <module name="demo-net" target="8" />
+      <module name="demo-oop" target="8" />
+      <module name="demo-optional" target="8" />
+      <module name="demo-recursion" target="8" />
+      <module name="demo-reflection" target="8" />
+      <module name="demo-string" target="8" />
+      <module name="demo-xml" target="8" />
+      <module name="dmeo-keyword" target="8" />
+      <module name="java-demo" target="8" />
+      <module name="multithread-basic" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

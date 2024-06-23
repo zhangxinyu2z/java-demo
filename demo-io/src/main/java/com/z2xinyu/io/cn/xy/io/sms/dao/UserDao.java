@@ -1,6 +1,6 @@
 package com.z2xinyu.io.cn.xy.io.sms.dao;
 
-import cn.xy.io.sms.pojo.User;
+import com.z2xinyu.io.cn.xy.io.sms.pojo.User;
 
 public interface UserDao {
     // 注册
